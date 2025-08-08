@@ -34,7 +34,6 @@ export default function Header() {
 
           {/* User Menu */}
           <div className="hidden md:flex items-center space-x-4">
-            <ThemeToggle />
             {user ? (
               <div className="relative">
                 <button
@@ -95,10 +94,6 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
-              <div className="flex justify-between items-center px-3 py-2">
-                <span className="text-sm font-medium text-foreground">Theme</span>
-                <ThemeToggle />
-              </div>
               <Link
                 to="/recommendations"
                 className="block px-3 py-2 text-muted-foreground hover:text-sky-500 transition-colors"

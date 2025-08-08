@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./navbar-menu";
 import { cn } from "../../lib/utils";
+import ThemeToggle from "./ThemeToggle";
 
 export function AnimatedNavbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -10,6 +11,9 @@ export function AnimatedNavbar({ className }: { className?: string }) {
     <div
       className={cn("fixed -top-1 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
+      <div className="flex justify-end mb-2 pr-4">
+        <ThemeToggle />
+      </div>
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Travel Tools">
           <div className="flex flex-col space-y-4 text-sm">
