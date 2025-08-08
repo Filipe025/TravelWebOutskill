@@ -34,6 +34,7 @@ export default function Header() {
 
           {/* User Menu */}
           <div className="hidden md:flex items-center space-x-4">
+            <ThemeToggle />
             {user ? (
               <div className="relative">
                 <button
@@ -115,6 +116,12 @@ export default function Header() {
               >
                 Currency Converter
               </Link>
+              
+              <div className="border-t pt-4">
+                <div className="px-3 py-2">
+                  <ThemeToggle />
+                </div>
+              </div>
               
               {user ? (
                 <div className="border-t pt-4">
