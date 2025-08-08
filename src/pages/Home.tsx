@@ -24,7 +24,7 @@ export default function Home() {
         ></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center mb-12">
+             textShadow: '3px 3px 8px rgba(0, 0, 0, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5)'
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg" style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.3)', textStroke: '1px rgba(255, 255, 255, 0.3)' }}>
               Your Journey Begins Here
             </h1>
