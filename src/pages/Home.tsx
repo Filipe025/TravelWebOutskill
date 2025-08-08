@@ -110,7 +110,6 @@ export default function Home() {
                 <Plane className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Flights</h3>
                 <h3 className="text-xl font-semibold mb-2 text-center">Flights</h3>
                 <p className="text-muted-foreground mb-4 text-center">Compare and book flights from hundreds of airlines worldwide.</p>
                 <Link to="/search" className="text-sky-500 hover:text-sky-600 font-medium">
