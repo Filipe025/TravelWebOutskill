@@ -8,7 +8,7 @@ export function AnimatedNavbar({ className }: { className?: string }) {
   
   return (
     <div
-      className={cn("fixed -top-3 inset-x-0 max-w-2xl mx-auto z-50", className)}
+      className={cn("fixed -top-1 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Travel Tools">
