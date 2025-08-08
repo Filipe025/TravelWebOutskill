@@ -54,7 +54,7 @@ export default function SearchForm({ className = '' }: SearchFormProps) {
   const today = new Date().toISOString().split('T')[0];
 
   return (
-    <form onSubmit={handleSubmit} className={`bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 ${className}`}>
+    <form onSubmit={handleSubmit} className={`bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hidden ${className}`}>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
         {/* Destination */}
         <div className="lg:col-span-2 relative">
