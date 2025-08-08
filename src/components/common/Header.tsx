@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <>
       <AnimatedNavbar />
-      <header className="bg-background border-b border-border shadow-lg sticky top-0 z-40">
+      <header className="bg-background border-b border-border shadow-lg sticky top-0 z-30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -29,40 +29,8 @@ export default function Header() {
             <span className="text-xl font-bold text-foreground">TravelEase</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <div className="relative group">
-              <button className="text-muted-foreground hover:text-sky-500 transition-colors">
-                Travel Tools
-              </button>
-              <div className="absolute left-0 mt-2 w-48 bg-background border border-border rounded-md shadow-lg py-1 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <Link
-                  to="/recommendations"
-                  className="block px-4 py-2 text-sm text-foreground hover:bg-accent"
-                >
-                  Books & Movies
-                </Link>
-                <Link
-                  to="/visa-info"
-                  className="block px-4 py-2 text-sm text-foreground hover:bg-accent"
-                >
-                  Visa Information
-                </Link>
-                <Link
-                  to="/currency-converter"
-                  className="block px-4 py-2 text-sm text-foreground hover:bg-accent"
-                >
-                  Currency Converter
-                </Link>
-              </div>
-            </div>
-            <Link to="/about" className="text-muted-foreground hover:text-sky-500 transition-colors">
-              About
-            </Link>
-            <Link to="/contact" className="text-muted-foreground hover:text-sky-500 transition-colors">
-              Contact
-            </Link>
-          </nav>
+          {/* Desktop Navigation - Spacer */}
+          <div className="hidden md:flex"></div>
 
           {/* User Menu */}
           <div className="hidden md:flex items-center space-x-4">
@@ -151,20 +119,6 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Currency Converter
-              </Link>
-              <Link
-                to="/about"
-                className="block px-3 py-2 text-muted-foreground hover:text-sky-500 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                to="/contact"
-                className="block px-3 py-2 text-muted-foreground hover:text-sky-500 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
               </Link>
               
               {user ? (
