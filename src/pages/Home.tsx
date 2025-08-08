@@ -28,6 +28,7 @@ export default function Home() {
               Your Journey Begins Here
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white drop-shadow-md">
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white drop-shadow-md text-center">
               Discover amazing destinations, book the perfect accommodations, and create unforgettable memories with TravelEase.
             </p>
           
