@@ -27,7 +27,6 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg text-center" style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.3)', textStroke: '1px rgba(255, 255, 255, 0.3)', textShadow: '3px 3px 8px rgba(0, 0, 0, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5)' }}>
               Your Journey Begins Here
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white drop-shadow-md">
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white drop-shadow-md text-center">
               Discover amazing destinations, book the perfect accommodations, and create unforgettable memories with TravelEase.
             </p>
