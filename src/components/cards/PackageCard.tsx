@@ -31,7 +31,7 @@ export default function PackageCard({ package: pkg, onBook }: PackageCardProps) 
         </div>
       </div>
       
-      <div className="p-6">
+      <div className="p-6 text-center">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{pkg.name}</h3>
           <div className="flex items-center space-x-1">
@@ -48,7 +48,7 @@ export default function PackageCard({ package: pkg, onBook }: PackageCardProps) 
         <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm">{pkg.description}</p>
         
         {savings > 0 && (
-          <div className="flex items-center space-x-2 mb-3">
+          <div className="flex items-center justify-center space-x-2 mb-3">
             <span className="text-lg font-bold text-gray-900 dark:text-gray-100">{formatPrice(pkg.price)}</span>
             <span className="text-sm text-gray-500 dark:text-gray-400 line-through">{formatPrice(pkg.originalPrice)}</span>
           </div>
@@ -57,7 +57,7 @@ export default function PackageCard({ package: pkg, onBook }: PackageCardProps) 
         <div className="space-y-2 mb-4">
           <h4 className="font-medium text-gray-900 dark:text-gray-100">Includes:</h4>
           {pkg.includes.map((item, index) => (
-            <div key={index} className="flex items-center space-x-2">
+            <div key={index} className="flex items-center justify-center space-x-2">
               <Check className="w-4 h-4 text-green-500" />
               <span className="text-sm text-gray-700 dark:text-gray-300">{item}</span>
             </div>
