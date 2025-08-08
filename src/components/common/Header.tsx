@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Plane, Menu, X, User, LogOut } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 import ThemeToggle from '../ui/ThemeToggle';
+import { AnimatedNavbar } from '../ui/AnimatedNavbar';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,9 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-background border-b border-border shadow-lg sticky top-0 z-50">
+    <>
+      <AnimatedNavbar />
+      <header className="bg-background border-b border-border shadow-lg sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -209,5 +212,6 @@ export default function Header() {
         )}
       </div>
     </header>
+    </>
   );
 }
